@@ -1,0 +1,6 @@
+2022-08-26 12:22:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table refresh_token (id bigint not null, created_at timestamp, modified_at timestamp, [*]value varchar(255) not null, member_id bigint not null, primary key (id))"; expected "identifier"; SQL statement:
+create table refresh_token (id bigint not null, created_at timestamp, modified_at timestamp, value varchar(255) not null, member_id bigint not null, primary key (id)) [42001-214]
+2022-08-26 12:22:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REFRESH_TOKEN" not found; SQL statement:
+alter table refresh_token add constraint FK5gdbafb2i76hk1ai18ah6an4w foreign key (member_id) references member [42102-214]
